@@ -1,0 +1,27 @@
+{
+  "name": "oberonamsterdam/clinchpad-api-php",
+  "version": "1.0.0",
+  "type": "library",
+  "description": "PHP library for v1 of the ClinchPad API",
+  "keywords": ["clinchpad"],
+  "homepage": "https://github.com/oberonamsterdam/clinchpad-api-php",
+  "require": {
+    "php": ">=5.4.0",
+    "guzzlehttp/guzzle": "^6.2.1",
+    "ext-json": "*",
+    "ext-curl": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.2.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "ClinchPad\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ClinchPad\\Tests\\": "tests/src/"
+    }
+  }
+}
