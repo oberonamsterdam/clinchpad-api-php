@@ -50,7 +50,7 @@ class ClinchPadContacts extends Resource
     }
 
     /**
-     * Creates a new ClinchPadcontact.
+     * Creates a new ClinchPad contact.
      *
      * @param string $name
      *   The contact's name.
@@ -153,7 +153,7 @@ class ClinchPadContacts extends Resource
     }
 
     /**
-     * Gets ClinchPadcontacts for a lead.
+     * Gets ClinchPad contacts for a lead.
      *
      * @param string $lead_id
      *   The ID of the lead.
