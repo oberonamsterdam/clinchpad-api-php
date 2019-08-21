@@ -5,7 +5,7 @@ namespace ClinchPad\Tests;
 use PHPUnit\Framework\TestCase;
 
 /**
- * ClinchPadClient library test cases.
+ * ClinchPadlibrary test cases.
  *
  * @package ClinchPadClient\Tests
  */

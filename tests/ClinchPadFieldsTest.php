@@ -6,7 +6,7 @@ use ClinchPad\exception\ClinchPadAPIException;
 use PHPUnit\Framework\TestCase;
 
 /**
- * ClinchPadClient Fields test library.
+ * ClinchPadFields test library.
  *
  * @package ClinchPadClient\Tests
  */

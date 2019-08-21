@@ -5,7 +5,7 @@ namespace ClinchPad\Resource;
 use ClinchPad\Exception\ClinchPadAPIException;
 
 /**
- * ClinchPadClient Contacts library.
+ * ClinchPadContacts library.
  *
  * @package ClinchPad
  * @see https://clinchpad.com/api/docs/contacts
@@ -29,7 +29,7 @@ class ClinchPadContacts extends Resource
     }
 
     /**
-     * Gets a ClinchPadClient contact.
+     * Gets a ClinchPad contact.
      *
      * @param string $contact_id
      *   The ID of the contact.
@@ -50,7 +50,7 @@ class ClinchPadContacts extends Resource
     }
 
     /**
-     * Creates a new ClinchPadClient contact.
+     * Creates a new ClinchPadcontact.
      *
      * @param string $name
      *   The contact's name.
@@ -74,7 +74,7 @@ class ClinchPadContacts extends Resource
     }
 
     /**
-     * Updates a ClinchPadClient contact.
+     * Updates a ClinchPad contact.
      *
      * @param string $contact_id
      *   The ID of the contact.
@@ -104,7 +104,7 @@ class ClinchPadContacts extends Resource
     }
 
     /**
-     * Updates the value of a ClinchPadClient contact's custom field.
+     * Updates the value of a ClinchPad contact's custom field.
      *
      * @param string $contact_id
      *   The ID of the contact.
@@ -134,7 +134,7 @@ class ClinchPadContacts extends Resource
     }
 
     /**
-     * Deletes a ClinchPadClient contact.
+     * Deletes a ClinchPad contact.
      *
      * @param string $contact_id
      *   The ID of the lead.
@@ -153,7 +153,7 @@ class ClinchPadContacts extends Resource
     }
 
     /**
-     * Gets ClinchPadClient contacts for a lead.
+     * Gets ClinchPadcontacts for a lead.
      *
      * @param string $lead_id
      *   The ID of the lead.
@@ -174,7 +174,7 @@ class ClinchPadContacts extends Resource
     }
 
     /**
-     * Adds a ClinchPadClient contact to a lead.
+     * Adds a ClinchPad contact to a lead.
      *
      * @param string $lead_id
      *   The ID of the lead.
@@ -198,7 +198,7 @@ class ClinchPadContacts extends Resource
     }
 
     /**
-     * Removes a ClinchPadClient contact from a lead.
+     * Removes a ClinchPad contact from a lead.
      *
      * @param string $lead_id
      *   The ID of the lead.

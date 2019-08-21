@@ -5,7 +5,7 @@ namespace ClinchPad\http;
 use Exception;
 
 /**
- * Interface for all HTTP clients used with the ClinchPadClient library.
+ * Interface for all HTTP clients used with the ClinchPadlibrary.
  *
  * @package ClinchPadClient
  */
@@ -13,7 +13,7 @@ interface ClinchPadHttpClientInterface
 {
 
     /**
-     * Makes a request to the ClinchPadClient API.
+     * Makes a request to the ClinchPadAPI.
      *
      * @param string $api_key
      *   The API key to authenticate.
@@ -25,7 +25,7 @@ interface ClinchPadHttpClientInterface
      *   Request options. @param array $parameters
      *   Associative array of parameters to send in the request body.
      * @param bool $returnAssoc
-     *   TRUE to return ClinchPadClient API response as an associative array.
+     *   TRUE to return ClinchPadAPI response as an associative array.
      *
      * @return object
      *

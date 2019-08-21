@@ -3,7 +3,7 @@
 namespace ClinchPad\Tests;
 
 /**
- * ClinchPadClient Lists library test cases.
+ * ClinchPadLists library test cases.
  *
  * @package ClinchPadClient\Tests
  */

@@ -9,7 +9,7 @@ use ClinchPad\http\ClinchPadHttpClientInterface;
 use Exception;
 
 /**
- * ClinchPad ClinchPadClient library.
+ * ClinchPad ClinchPadlibrary.
  *
  * @package ClinchPad
  * @see https://clinchpad.com/api/docs
@@ -41,14 +41,14 @@ class ClinchPadClient
     protected $endpoint = 'https://www.clinchpad.com/api/v1';
 
     /**
-     * The ClinchPadClient API key to authenticate with.
+     * The ClinchPadAPI key to authenticate with.
      *
      * @var string $api_key
      */
     private $api_key;
 
     /**
-     * A ClinchPadClient API error code to return with every API response.
+     * A ClinchPadAPI error code to return with every API response.
      *
      * Used for testing / debugging error handling.
      * See ERROR_CODE_* constants.
@@ -58,10 +58,10 @@ class ClinchPadClient
     private $debug_error_code;
 
     /**
-     * ClinchPadClient constructor.
+     * ClinchPadconstructor.
      *
      * @param string $api_key
-     *   The ClinchPadClient API key.
+     *   The ClinchPadAPI key.
      * @param array $http_options
      *   HTTP client options.
      * @param ClinchPadHttpClientInterface $client
@@ -116,7 +116,7 @@ class ClinchPadClient
     }
 
     /**
-     * Makes a request to the ClinchPadClient API.
+     * Makes a request to the ClinchPadAPI.
      *
      * @param string $method
      *   The REST method to use when making the request.
@@ -127,7 +127,7 @@ class ClinchPadClient
      * @param array $parameters
      *   Associative array of parameters to send in the request body.
      * @param bool $returnAssoc
-     *   TRUE to return ClinchPadClient API response as an associative array.
+     *   TRUE to return ClinchPadAPI response as an associative array.
      *
      * @return mixed
      *   Object or Array if $returnAssoc is TRUE.

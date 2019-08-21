@@ -5,7 +5,7 @@ namespace ClinchPad\http;
 use Exception;
 
 /**
- * An HTTP client for use with the ClinchPadClient API using cURL.
+ * An HTTP client for use with the ClinchPadAPI using cURL.
  *
  * @package ClinchPadClient
  */

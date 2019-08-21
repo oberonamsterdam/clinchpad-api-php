@@ -5,7 +5,7 @@ namespace ClinchPad\http;
 use GuzzleHttp\Client;
 
 /**
- * An HTTP client for use with the ClinchPadClient API using Guzzle.
+ * An HTTP client for use with the ClinchPadAPI using Guzzle.
  *
  * @package ClinchPadClient
  */

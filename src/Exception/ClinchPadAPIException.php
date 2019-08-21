@@ -5,7 +5,7 @@ namespace ClinchPad\Exception;
 use Exception;
 
 /**
- * Custom ClinchPadClient API Exception.
+ * Custom ClinchPadAPI Exception.
  *
  * @package ClinchPadClient
  */

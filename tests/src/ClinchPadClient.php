@@ -5,7 +5,7 @@ namespace ClinchPad\Tests;
 use ClinchPad\http\ClinchPadHttpClientInterface;
 
 /**
- * Test ClinchPadClient library.
+ * Test ClinchPadlibrary.
  *
  * @package ClinchPadClient\Tests
  */
