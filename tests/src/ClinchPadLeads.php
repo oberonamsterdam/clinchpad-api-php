@@ -82,13 +82,12 @@ class ClinchPadLeads extends \ClinchPad\Resource\ClinchPadLeads
     /**
      * @inheritdoc
      */
-    public function updateLead($lead_id, $name, $parameters = [])
+    public function updateLead($lead_id, $parameters = [])
     {
-        parent::updateLead($lead_id, $name, $parameters);
+        parent::updateLead($lead_id, $parameters);
 
         $response = (object)[
             '_id' => $lead_id,
-            'name' => $name,
         ];
 
         foreach ($parameters as $key => $value) {

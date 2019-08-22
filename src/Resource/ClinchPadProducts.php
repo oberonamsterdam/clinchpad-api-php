@@ -89,15 +89,10 @@ class ClinchPadProducts extends Resource
      *
      * @throws ClinchPadAPIException
      */
-    public function updateProduct($product_id, $name, $price, $parameters = [])
+    public function updateProduct($product_id, $parameters = [])
     {
         $tokens = [
             'product_id' => $product_id
-        ];
-
-        $parameters += [
-            'name' => $name,
-            'price' => $price,
         ];
 
         return $this->client->request('PUT', '/products/{product_id}', $tokens, $parameters);

@@ -84,8 +84,6 @@ class ClinchPadLeads extends Resource
      *
      * @param string $lead_id
      *   The ID of the lead.
-     * @param string $name
-     *   The lead's name.
      * @param array $parameters
      *   Associative array of optional request parameters.
      *
@@ -93,14 +91,10 @@ class ClinchPadLeads extends Resource
      *
      * @throws ClinchPadAPIException
      */
-    public function updateLead($lead_id, $name, $parameters = [])
+    public function updateLead($lead_id, $parameters = [])
     {
         $tokens = [
             'lead_id' => $lead_id
-        ];
-
-        $parameters += [
-            'name' => $name,
         ];
 
         return $this->client->request('PUT', '/leads/{lead_id}', $tokens, $parameters);

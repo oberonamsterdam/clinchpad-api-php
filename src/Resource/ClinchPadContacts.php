@@ -78,10 +78,6 @@ class ClinchPadContacts extends Resource
      *
      * @param string $contact_id
      *   The ID of the contact.
-     * @param string $name
-     *   The contact's name.
-     * @param string $email
-     *   The contact's email.
      * @param array $parameters
      *   Associative array of optional request parameters.
      *
@@ -89,15 +85,10 @@ class ClinchPadContacts extends Resource
      *
      * @throws ClinchPadAPIException
      */
-    public function updateContact($contact_id, $name, $email, $parameters = [])
+    public function updateContact($contact_id, $parameters = [])
     {
         $tokens = [
             'contact_id' => $contact_id
-        ];
-
-        $parameters += [
-            'name' => $name,
-            'email' => $email,
         ];
 
         return $this->client->request('PUT', '/contacts/{contact_id}', $tokens, $parameters);

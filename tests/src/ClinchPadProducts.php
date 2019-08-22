@@ -90,14 +90,14 @@ class ClinchPadProducts extends \ClinchPad\Resource\ClinchPadProducts
     /**
      * @inheritdoc
      */
-    public function updateProduct($product_id, $name, $price, $parameters = [])
+    public function updateProduct($product_id, $parameters = [])
     {
-        parent::updateProduct($product_id, $name, $price, $parameters);
+        parent::updateProduct($product_id, $parameters);
 
         $response = (object)[
             '_id' => $product_id,
-            'name' => $name,
-            'price' => $price,
+            'name' => 'Updated product',
+            'price' => 2000,
         ];
 
         foreach ($parameters as $key => $value) {

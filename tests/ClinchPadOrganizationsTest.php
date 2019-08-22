@@ -72,11 +72,10 @@ class ClinchPadOrganizationsTest extends TestCase
     public function testUpdateOrganization()
     {
         $organization_id = '52219a33cce8b46dd400006a';
-        $name = 'Test Organization Update';
 
         $client = new ClinchPadClient('api-key');
         $resource = new ClinchPadOrganizations($client);
-        $resource->updateOrganization($organization_id, $name);
+        $resource->updateOrganization($organization_id);
 
         $this->assertEquals('PUT', $client->getClient()->method);
         $this->assertEquals($client->getEndpoint() . '/organizations/' . $organization_id, $client->getClient()->uri);

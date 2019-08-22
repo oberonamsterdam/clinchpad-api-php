@@ -75,11 +75,10 @@ class ClinchPadLeadsTest extends TestCase
     public function testUpdateLead()
     {
         $lead_id = '52219a33cce8b46dd400006a';
-        $name = 'Test Lead Update';
 
         $client = new ClinchPadClient('api-key');
         $resource = new ClinchPadLeads($client);
-        $resource->updateLead($lead_id, $name);
+        $resource->updateLead($lead_id);
 
         $this->assertEquals('PUT', $client->getClient()->method);
         $this->assertEquals($client->getEndpoint() . '/leads/' . $lead_id, $client->getClient()->uri);

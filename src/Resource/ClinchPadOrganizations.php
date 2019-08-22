@@ -84,14 +84,10 @@ class ClinchPadOrganizations extends Resource
      *
      * @throws ClinchPadAPIException
      */
-    public function updateOrganization($organization_id, $name, $parameters = [])
+    public function updateOrganization($organization_id, $parameters = [])
     {
         $tokens = [
             'organization_id' => $organization_id
-        ];
-
-        $parameters += [
-            'name' => $name,
         ];
 
         return $this->client->request('PUT', '/organizations/{organization_id}', $tokens, $parameters);

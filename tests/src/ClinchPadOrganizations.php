@@ -115,13 +115,13 @@ class ClinchPadOrganizations extends \ClinchPad\Resource\ClinchPadOrganizations
     /**
      * @inheritdoc
      */
-    public function updateOrganization($organization_id, $name, $parameters = [])
+    public function updateOrganization($organization_id, $parameters = [])
     {
-        parent::updateOrganization($organization_id, $name, $parameters);
+        parent::updateOrganization($organization_id, $parameters);
 
         $response = (object)[
             '_id' => $organization_id,
-            'name' => $name,
+            'name' => 'Updated organization',
             'email' => 'info@foocorp.com',
             'phone' => '5553336666',
             'website' => 'http://www.foocorp.com',

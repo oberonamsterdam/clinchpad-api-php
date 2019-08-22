@@ -112,14 +112,14 @@ class ClinchPadContacts extends \ClinchPad\Resource\ClinchPadContacts
     /**
      * @inheritdoc
      */
-    public function updateContact($contact_id, $name, $email, $parameters = [])
+    public function updateContact($contact_id, $parameters = [])
     {
-        parent::updateContact($contact_id, $name, $email, $parameters);
+        parent::updateContact($contact_id, $parameters);
 
         $response = (object)[
             '_id' => $contact_id,
-            'name' => $name,
-            'email' => $email,
+            'name' => 'Updated contact',
+            'email' => 'updated@email.com',
             'custom_fields' => (object)[
                 '_id' => '531ed3a49a21f6e90b00000e',
                 'name' => 'Newsletter',

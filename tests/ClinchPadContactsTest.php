@@ -73,12 +73,10 @@ class ClinchPadContactsTest extends TestCase
     public function testUpdateContact()
     {
         $contact_id = '52219a33cce8b46dd400006a';
-        $name = 'Test Contact Update';
-        $email = 'test@test.com';
 
         $client = new ClinchPadClient('api-key');
         $resource = new ClinchPadContacts($client);
-        $resource->updateContact($contact_id, $name, $email);
+        $resource->updateContact($contact_id);
 
         $this->assertEquals('PUT', $client->getClient()->method);
         $this->assertEquals($client->getEndpoint() . '/contacts/' . $contact_id, $client->getClient()->uri);

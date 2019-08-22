@@ -73,12 +73,10 @@ class ClinchPadProductsTest extends TestCase
     public function testUpdateProduct()
     {
         $product_id = '52219a33cce8b46dd400006a';
-        $name = 'Test Product Update';
-        $price = 1000;
 
         $client = new ClinchPadClient('api-key');
         $resource = new ClinchPadProducts($client);
-        $resource->updateProduct($product_id, $name, $price);
+        $resource->updateProduct($product_id);
 
         $this->assertEquals('PUT', $client->getClient()->method);
         $this->assertEquals($client->getEndpoint() . '/products/' . $product_id, $client->getClient()->uri);
