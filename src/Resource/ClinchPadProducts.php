@@ -147,6 +147,8 @@ class ClinchPadProducts extends Resource
      *   The ID of the product.
      * @param int $quantity
      *   The quantity of the product.
+     * @param double $discount
+     *   The discount percentage (0-100), default 0%
      * @param array $parameters
      *   Associative array of optional request parameters.
      *
@@ -154,7 +156,7 @@ class ClinchPadProducts extends Resource
      *
      * @throws ClinchPadAPIException
      */
-    public function addProductToLead($lead_id, $product_id, $quantity, $parameters = [])
+    public function addProductToLead($lead_id, $product_id, $quantity, $discount = 0.00, $parameters = [])
     {
         $tokens = [
             'lead_id' => $lead_id,
@@ -163,6 +165,7 @@ class ClinchPadProducts extends Resource
 
         $parameters += [
             'quantity' => $quantity,
+            'discount' => $discount,
         ];
 
         return $this->client->request('PUT', '/leads/{lead_id}/products/{product_id}', $tokens, $parameters);

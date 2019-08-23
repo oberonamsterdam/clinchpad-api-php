@@ -123,10 +123,11 @@ class ClinchPadProductsTest extends TestCase
         $lead_id = '531ed3a49a21f6e90b00000e';
         $product_id = '52219a33cce8b46dd400006a';
         $quantity = 1;
+        $discount = 10.00;
 
         $client = new ClinchPadClient('api-key');
         $resource = new ClinchPadProducts($client);
-        $resource->addProductToLead($lead_id, $product_id, $quantity);
+        $resource->addProductToLead($lead_id, $product_id, $quantity, $discount);
 
         $this->assertEquals('PUT', $client->getClient()->method);
         $this->assertEquals($client->getEndpoint() . '/leads/' . $lead_id . '/products/' . $product_id, $client->getClient()->uri);

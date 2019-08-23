@@ -147,13 +147,14 @@ class ClinchPadProducts extends \ClinchPad\Resource\ClinchPadProducts
     /**
      * @inheritdoc
      */
-    public function addProductToLead($lead_id, $product_id, $quantity, $parameters = [])
+    public function addProductToLead($lead_id, $product_id, $quantity, $discount = 0.00, $parameters = [])
     {
-        parent::addProductToLead($lead_id, $product_id, $quantity, $parameters);
+        parent::addProductToLead($lead_id, $product_id, $quantity, $discount, $parameters);
 
         $response = (object)[
             '_id' => $product_id,
             'quantity' => $quantity,
+            'discount' => $discount,
             'name' => 'Updated product',
         ];
 
