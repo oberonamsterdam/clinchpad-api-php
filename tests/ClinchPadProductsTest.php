@@ -123,7 +123,7 @@ class ClinchPadProductsTest extends TestCase
         $lead_id = '531ed3a49a21f6e90b00000e';
         $product_id = '52219a33cce8b46dd400006a';
         $quantity = 1;
-        $discount = 10.00;
+        $discount = 10.0;
 
         $client = new ClinchPadClient('api-key');
         $resource = new ClinchPadProducts($client);
