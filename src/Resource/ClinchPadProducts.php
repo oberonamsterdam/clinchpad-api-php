@@ -165,7 +165,7 @@ class ClinchPadProducts extends Resource
 
         $parameters += [
             'quantity' => intval($quantity),
-            'discount' => floatval($discount),
+            'discount' => number_format($discount,2, '.',''),
         ];
 
         return $this->client->request('PUT', '/leads/{lead_id}/products/{product_id}', $tokens, $parameters);
