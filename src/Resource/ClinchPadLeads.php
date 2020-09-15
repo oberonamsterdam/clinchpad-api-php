@@ -1,6 +1,6 @@
 <?php
 
-namespace ClinchPad\resource;
+namespace ClinchPad\Resource;
 
 use ClinchPad\exception\ClinchPadAPIException;
 
